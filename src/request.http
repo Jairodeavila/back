@@ -1,0 +1,37 @@
+### Obtener usuarios
+GET http://localhost:3000/users/all
+Content-Type: application/json
+
+---
+
+### Crear un usuario
+POST http://localhost:3000/users/create
+Content-Type: application/json
+
+{
+    "id": "4",
+    "username": "keaner",
+    "password": "123",
+    "apellido": "yepes",
+    "telefono": "123456789"
+}
+
+---
+
+### Crear un usuario
+PUT http://localhost:3000/users/update/12
+
+    {
+      "username": "jairo manue",
+      "password": "new_password",
+      "apellido": "New Doe",
+      "telefono": "987654321"
+    }
+
+---
+
+### eliminar un usuario
+
+DELETE  http://localhost:3000/users/12
+  
+
